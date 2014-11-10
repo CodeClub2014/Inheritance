@@ -4,7 +4,8 @@ Tasks:
 Read main.cpp
 Try to run
 Implement missing functions
-Add new enemy type
+Give names in constructors
+Make loop stop if there are no more enemies
 
 Add variables to logical places:
 	int initiative; // affects who attacks first
@@ -16,6 +17,7 @@ Add variables to logical places:
 Add functions to logical places:
 	void takeDamage(int damage); // makes calculations and damages target based on given damage
 
+Add new enemy type
 */
 
 #include <vector>
@@ -50,7 +52,7 @@ int main()
 
 		int enemiesAlive = 0;
 
-		for (auto e : enemies)
+		for (auto& e : enemies)
 		{
 			if (e.isAlive())
 			{
