@@ -45,16 +45,18 @@ void Player::control()
 		<< "Give instructions for player" << std::endl
 		<< Attack << " to attack" << std::endl
 		<< Defend << " to defend" << std::endl
-		<< Dance << " to dance" << std::endl
 		<< "Any other number to do nothing" << std::endl;
  
 	switch (readInt())
 	{
 	case Attack:
+		std::cout << "You chose to Attack" << std::endl;
 		break;
 	case Defend:
+		std::cout << "You chose to Defend" << std::endl;
 		break;
 	case Dance:
+		std::cout << "You chose to Dance" << std::endl;
 		break;
 	case Nothing:
 	default :

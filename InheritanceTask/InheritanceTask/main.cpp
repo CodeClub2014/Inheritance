@@ -52,7 +52,7 @@ int main()
 
 		int enemiesAlive = 0;
 
-		for (auto& e : enemies)
+		for (Enemy& e : enemies)
 		{
 			if (e.isAlive())
 			{
@@ -61,7 +61,7 @@ int main()
 			}
 		}
 
-		for (auto e : enemies)
+		for (Enemy& e : enemies)
 		{
 			e.printInfo();
 		}
